@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+    int ganjil;
+    int genap;
+    while (true)
+    {
+        printf("\nInput angka pertama (Harus Ganjil) : ");
+        scanf("%d", &ganjil);
+        if (ganjil % 2 == 1)
+        {
+            break;
+        }
+        else
+        {
+            printf("\n Mohon maaf, Angka yang dimasukkan harus angka ganjil");
+        }
+    }
+    while (true)
+    {
+        printf("\nInput angka kedua (Harus Genap) : ");
+        scanf("%d", &genap);
+        if (genap % 2 == 0)
+        {
+            break;
+        }
+        else
+        {
+            printf("\nMohon maaf, Angka yang dimasukkan harus angka genap");
+        }
+    }
+    printf("\nHasil Jumlah : %d", ganjil + genap);
+    printf("\nRata rata : %.2f", ((float)ganjil + (float)genap) / 2);
+    printf("\nKuadrat input 1 : %ld", ganjil * ganjil);
+    printf("\nKuadrat input 2 : %ld", genap * genap);
+    return 0;
+}
